@@ -1,0 +1,30 @@
+2024-12-13 17:33:14,439 - INFO - Scraping overall rating and review count for: Naturals, located at: No F37A, 1st Floor, Spencer Plaza, Phase 2, Anna Salai, Triplicane, Chennai - 600002
+2024-12-13 17:33:51,031 - ERROR - Error during scraping: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010502faf0 cxxbridge1$str$ptr + 3651580
+1   chromedriver                        0x0000000105028340 cxxbridge1$str$ptr + 3620940
+2   chromedriver                        0x0000000104a904b4 cxxbridge1$string$len + 89224
+3   chromedriver                        0x0000000104ad4898 cxxbridge1$string$len + 368748
+4   chromedriver                        0x0000000104b0e0fc cxxbridge1$string$len + 604368
+5   chromedriver                        0x0000000104ac90b0 cxxbridge1$string$len + 321668
+6   chromedriver                        0x0000000104ac9d00 cxxbridge1$string$len + 324820
+7   chromedriver                        0x0000000104ffae34 cxxbridge1$str$ptr + 3435328
+8   chromedriver                        0x0000000104ffe14c cxxbridge1$str$ptr + 3448408
+9   chromedriver                        0x0000000104fe21a8 cxxbridge1$str$ptr + 3333812
+10  chromedriver                        0x0000000104ffea0c cxxbridge1$str$ptr + 3450648
+11  chromedriver                        0x0000000104fd39b4 cxxbridge1$str$ptr + 3274432
+12  chromedriver                        0x0000000105019120 cxxbridge1$str$ptr + 3558956
+13  chromedriver                        0x000000010501929c cxxbridge1$str$ptr + 3559336
+14  chromedriver                        0x0000000105027fb4 cxxbridge1$str$ptr + 3620032
+15  libsystem_pthread.dylib             0x0000000195db9f94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000195db4d34 thread_start + 8
+
+2024-12-13 17:35:34,471 - INFO - Scraping overall rating and review count for: Naturals, located at: No F37A, 1st Floor, Spencer Plaza, Phase 2, Anna Salai, Triplicane, Chennai - 600002
+2024-12-13 17:36:11,161 - ERROR - Search results did not load: Message: 
+
+2024-12-13 17:36:32,361 - INFO - Scraping overall rating and review count for: Naturals, located at: No F37A, 1st Floor, Spencer Plaza, Phase 2, Anna Salai, Triplicane, Chennai - 600002
+2024-12-13 17:37:04,091 - ERROR - Search results did not load: Message: 
+
+2024-12-13 17:39:17,968 - INFO - Scraping overall rating and review count for: Naturals, located at: No F37A, 1st Floor, Spencer Plaza, Phase 2, Anna Salai, Triplicane, Chennai - 600002
+2024-12-13 17:39:29,261 - INFO - Overall Rating: 4.3, Total Reviews: 179
+2024-12-13 17:39:29,262 - INFO - Data extracted: {'Business Name': 'Naturals', 'Address': 'No F37A, 1st Floor, Spencer Plaza, Phase 2, Anna Salai, Triplicane, Chennai - 600002', 'Overall Rating': '4.3', 'Total Reviews': 179}
