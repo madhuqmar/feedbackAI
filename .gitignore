@@ -12,5 +12,12 @@ googlemaps-scraper/
 # Data
 data/*
 
-# Virtual Environment
-proj_env/*
+# Ignore virtual environment and related files
+proj_env/
+*.dylib
+*.so
+*.dll
+
+# Ignore sensitive files
+*.env
+proj_env/lib/python3.9/*
