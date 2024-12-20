@@ -7,7 +7,10 @@ __pycache__/
 .ipynb_checkpoints/*
 
 # Scraper
-googlemaps-scraper/*
+googlemaps-scraper/
 
 # Data
 data/*
+
+# Virtual Environment
+proj_env/*

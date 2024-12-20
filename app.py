@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import plotly.express as px
 
 # Load the data
 @st.cache_data
@@ -47,10 +47,50 @@ def main():
         # Display top five locations with least rating
         st.header("Top 5 Locations with Least Rating")
         top_least_rated = df.sort_values(by="Rating", ascending=True).head(5)
-        st.dataframe(top_least_rated[["Name", "Address", "Rating", "Total Reviews"]])
+        st.dataframe(top_least_rated[["City Area", "Name", "Rating", "Total Reviews", "Address"]])
+
     else:
         st.warning("The file is empty or has an unexpected format. Please check the file.")
 
+    selected_location = st.selectbox("Select a Naturals Location", options=df['full_location'])
+
+    sentiments_file_path = "data/naturals_reviews_sentiments.csv"
+    sentiment_df = load_data(sentiments_file_path)
+
+    df['Place ID'] = df['Place ID'].str.strip('\n')
+    sentiment_df['place_id'] = sentiment_df['place_id'].str.strip('\n')
+
+    combined_df = pd.merge(sentiment_df, df, left_on="place_id", right_on="Place ID", how="left")
+
+    if selected_location:
+        filtered_df = combined_df[combined_df['full_location'] == selected_location]
+
+        # Calculate value counts for the pie chart
+        category_counts = filtered_df['sentiment'].value_counts().reset_index()
+        category_counts.columns = ['sentiment', 'count']
+
+        # Create the pie chart
+        fig = px.pie(category_counts,
+                     names='sentiment',  # Labels for the pie chart
+                     values='count',  # Sizes of the pie chart slices
+                     title='Sentiment Distribution')
+
+        # Display the chart in Streamlit
+        st.plotly_chart(fig)
+
+    else:
+        # Calculate value counts for the pie chart
+        category_counts = sentiment_df['sentiment'].value_counts().reset_index()
+        category_counts.columns = ['sentiment', 'count']
+
+        # Create the pie chart
+        fig = px.pie(category_counts,
+                     names='sentiment',  # Labels for the pie chart
+                     values='count',  # Sizes of the pie chart slices
+                     title='Sentiment Distribution')
+
+        # Display the chart in Streamlit
+        st.plotly_chart(fig)
 
 # Run the app
 if __name__ == "__main__":
