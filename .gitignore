@@ -10,7 +10,9 @@ __pycache__/
 googlemaps-scraper/
 
 # Data
-data/*
+data/review_data/
+data/map_urls/
+data/location_data
 
 # Ignore virtual environment and related files
 proj_env/
