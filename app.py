@@ -24,14 +24,14 @@ def main():
     st.write("Analyze locations, ratings, and reviews data extracted via Google Places API.")
 
     # Load data from specified location
-    file_path_1 = "data/naturals_chennai_locations_metadata.csv"
+    file_path_1 = "data/nailsnbeyond_locations_metadata.csv"
     ratings_df = load_data(file_path_1)
-    ratings_df["full_location"] = ratings_df["City Area"] + ratings_df["Name"]
+    ratings_df["full_location"] = ratings_df["City Area"] + " " + ratings_df["Name"]
 
-    file_path_2 = "data/naturals_reviews.csv"
+    file_path_2 = "data/nailsnbeyond_reviews.csv"
     reviews_df = load_data(file_path_2)
 
-    file_path_3 = "data/naturals_sentiments.csv"
+    file_path_3 = "data/nailsnbeyond_sentiments.csv"
     sentiments_df = load_data(file_path_3)
 
     df = pd.merge(ratings_df, sentiments_df, left_on="Place ID", right_on="place_id", how="right")

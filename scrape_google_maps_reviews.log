@@ -1,0 +1,31 @@
+2024-12-28 22:21:26,110 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-12-28 22:21:40,496 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:40,498 - INFO - API queries_quota: 60
+2024-12-28 22:21:41,503 - INFO - No more pages available.
+2024-12-28 22:21:41,509 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:41,510 - INFO - API queries_quota: 60
+2024-12-28 22:21:42,404 - INFO - No more pages available.
+2024-12-28 22:21:42,409 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:42,411 - INFO - API queries_quota: 60
+2024-12-28 22:21:43,866 - INFO - No more pages available.
+2024-12-28 22:21:43,871 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:43,873 - INFO - API queries_quota: 60
+2024-12-28 22:21:45,109 - INFO - No more pages available.
+2024-12-28 22:21:45,114 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:45,116 - INFO - API queries_quota: 60
+2024-12-28 22:21:47,421 - INFO - No more pages available.
+2024-12-28 22:21:47,426 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:47,427 - INFO - API queries_quota: 60
+2024-12-28 22:21:48,166 - INFO - No more pages available.
+2024-12-28 22:21:48,171 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:48,173 - INFO - API queries_quota: 60
+2024-12-28 22:21:49,380 - INFO - No more pages available.
+2024-12-28 22:21:49,385 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:49,387 - INFO - API queries_quota: 60
+2024-12-28 22:21:50,740 - INFO - No more pages available.
+2024-12-28 22:21:50,746 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:50,747 - INFO - API queries_quota: 60
+2024-12-28 22:21:51,947 - INFO - No more pages available.
+2024-12-28 22:21:51,953 - INFO - Starting the scrape_google_maps_metadata function
+2024-12-28 22:21:51,954 - INFO - API queries_quota: 60
+2024-12-28 22:21:53,084 - INFO - No more pages available.
