@@ -1,9 +1,18 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 st.set_page_config(layout="wide")
 
+# Function to trigger the scraper
+def run_scraper():
+    try:
+        # Run the scraper script
+        os.system("googlemaps-scraper/python scraper.py --N 100000")
+        st.success("Scraping completed successfully!")
+    except Exception as e:
+        st.error(f"Error running the scraper: {e}")
 
 # Load the data
 @st.cache_data
@@ -69,6 +78,12 @@ def main():
         filtered_df = filtered_df[filtered_df['rating'] == rating]
     if selected_location != "All":
         filtered_df = filtered_df[filtered_df['full_location'] == selected_location]
+
+    # Add a button to trigger the scraper
+    if st.button("Run Scraper", type="primary"):
+        with st.spinner("Scraping in progress..."):
+            run_scraper()
+
 
     #### Top 5 least-rated salons (unaffected by filters) ####
     st.header("Top 5 Locations with Least Rating")
